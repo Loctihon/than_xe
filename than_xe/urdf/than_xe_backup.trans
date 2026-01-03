@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<robot name="than_xe_backup" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="wheel1_to_motor1_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="wheel1_to_motor1">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="wheel1_to_motor1_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="wheel2_to_motor2_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="wheel2_to_motor2">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="wheel2_to_motor2_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="wheel3_to_motor3_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="wheel3_to_motor3">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="wheel3_to_motor3_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="wheel4_to_base_link_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="wheel4_to_base_link">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="wheel4_to_base_link_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>
